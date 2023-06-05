@@ -60,51 +60,49 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="mobile-menu-open-btn">
+        <button type="button" class="mobile-menu-open-btn js-open-menu" aria-expanded="false">
           <svg class="mobile-menu-open-btn-icon" width="32" height="22">
-            <use href="./images/icons.svg#icon-open-btn-menu-mobile"></use>
+            <use href="./images/icons.svg#icon-hamburger"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu js-menu-container">
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close-btn">
+          <button class="mobile-menu-close-btn js-close-menu">
             <svg class="mobile-menu-close-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-close-btn"></use>
             </svg>
           </button>
           <div class="nav-list-mobile-container">
-          <div>
           <ul class="list nav-list-mobile ">
             <li>
               <a
-                class="link"
+                class="link nav-list-mobile-item"
                 href="./index.html">Studio</a>
               </li>
             <li>
-              <a class="link" href="./portfolio.html"
+              <a class="link nav-list-mobile-item" href="./portfolio.html"
                 >Portfolio</a
               ></li>
             <li>
-              <a class="link" href="#">Contacts</a></li>
+              <a class="link nav-list-mobile-item" href="#">Contacts</a></li>
           </ul>
-          </div>
           <div>
           <ul class="list link nav-list-mobile-contact">
             <li>
-              <a class="contact link" href="tel:+110001111111"
+              <a class="contact-mobile link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
             <li>
-              <a class="contact link" href="mailto:info@devstudio.com"
+              <a class="contact-email-mobile link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
           </ul>
           <ul class="list link nav-list-mobile-network">
-            <li>
-              <a href="#" class="">
+            <li class="social-network-item">
+              <a href="" class="footer-social-network-link">
                 <svg
                   class="footer-social-network-icon"
                   aria-label="іконка інстаграму"
@@ -113,20 +111,22 @@
                 >
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
-              </a></li>
-            <li>
-              <a href="#" class="">
+              </a>
+            </li>
+            <li class="social-network-item">
+              <a href="" class="footer-social-network-link">
                 <svg
-                        class="social-network-icon"
-                        aria-label="іконка твітера"
-                        width="24"
-                        height="24"
-                      >
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a></li>
-            <li>
-              <a href="#" class="">
+                  class="footer-social-network-icon"
+                  aria-label="іконка твітера"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-network-item">
+              <a href="" class="footer-social-network-link">
                 <svg
                   class="footer-social-network-icon"
                   aria-label="іконка фейсбук"
@@ -137,17 +137,17 @@
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="#" class="">
-                      <svg
-                        class="social-network-icon"
-                        aria-label="іконка лінкедина"
-                        width="24"
-                        height="24"
-                      >
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
+            <li class="social-network-item">
+              <a href="" class="footer-social-network-link">
+                <svg
+                  class="footer-social-network-icon"
+                  aria-label="іконка лінкедина"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
           </div>
@@ -159,10 +159,10 @@
     <!-- основний блок -->
 
     <main>
-      <!-- сторінка герой 
+      <!-- сторінка герой  -->
 
-      <section class="hero-section">
-        <div class="container">
+     <section class="hero-section">
+        <div class="container-hero">
           <h1 class="main-title">
             Effective Solutions <br />
             for Your Business
@@ -171,12 +171,12 @@
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
 
-      <!-- наші цілі
+      <!-- наші цілі -->
 
       <section class="section">
-        <div class="container">
+        <div class="container container-mobile-goals">
           <h2 class="visually-hidden">Our goals</h2>
           <ul class="list goals-list">
             <li class="goals-list-item">
@@ -229,9 +229,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section> 
 
-      <!-- приклади робіт 
+      <!-- приклади робіт  -->
 
       <section class="work-examples-section">
         <div class="container">
@@ -293,9 +293,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- наша команда 
+      <!-- наша команда -->
 
       <section class="our-team section">
         <div class="container">
@@ -310,7 +310,7 @@
                   "
                   type="image/webp"
                 />
-                <img
+                <img class="our-team-photo"
                   srcset="./images/our-team/mark-guerrero@2x.jpg 2x"
                   src="./images/our-team/mark-guerrero.jpg"
                   alt="Mark Guerrero"
@@ -382,7 +382,7 @@
                   "
                   type="image/webp"
                 />
-                <img
+                <img class="our-team-photo"
                   srcset="./images/our-team/tom-ford@2x.png 2x"
                   src="./images/our-team/tom-ford.jpg"
                   alt="Tom Ford"
@@ -454,7 +454,7 @@
                   "
                   type="image/webp"
                 />
-                <img
+                <img class="our-team-photo"
                   srcset="./images/our-team/camila-garcia@2x.jpg 2x"
                   src="./images/our-team/camila-garcia.jpg"
                   alt="Camila Garcia"
@@ -526,7 +526,7 @@
                   "
                   type="image/webp"
                 />
-                <img
+                <img class="our-team-photo"
                   srcset="./images/our-team/daniel-wilson@2x.jpg 2x"
                   src="./images/our-team/daniel-wilson.jpg"
                   alt="Daniel Wilson"
@@ -591,7 +591,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section> 
 
       <!-- Список клієнтів 
 
@@ -857,5 +857,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

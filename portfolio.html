@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- хедер -->
+    <!------------------------------ HEADER ------------------------------>
 
     <header class="page-header">
       <div class="container page-header-container">
@@ -57,6 +57,109 @@
             </li>
           </ul>
         </address>
+        <button
+          type="button"
+          class="mobile-menu-open-btn js-open-menu"
+          aria-expanded="false"
+        >
+          <svg class="mobile-menu-open-btn-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-menu-close-btn js-close-menu">
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+          <div class="nav-list-mobile-container">
+            <ul class="list nav-list-mobile">
+              <li>
+                <a class="link nav-list-mobile-item" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link nav-list-mobile-item nav-mobile-color"
+                  href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a class="link nav-list-mobile-item" href="#">Contacts</a>
+              </li>
+            </ul>
+            <div>
+              <ul class="list link nav-list-mobile-contact">
+                <li>
+                  <a class="contact-mobile link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="contact-email-mobile link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="list link nav-list-mobile-network">
+                <li class="social-network-item">
+                  <a href="" class="footer-social-network-link">
+                    <svg
+                      class="footer-social-network-icon"
+                      aria-label="іконка інстаграму"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-network-item">
+                  <a href="" class="footer-social-network-link">
+                    <svg
+                      class="footer-social-network-icon"
+                      aria-label="іконка твітера"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-network-item">
+                  <a href="" class="footer-social-network-link">
+                    <svg
+                      class="footer-social-network-icon"
+                      aria-label="іконка фейсбук"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-network-item">
+                  <a href="" class="footer-social-network-link">
+                    <svg
+                      class="footer-social-network-icon"
+                      aria-label="іконка лінкедина"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -116,7 +219,7 @@
                         ./images/projects/banking-app-interface-concept-mobile.webp    1x,
                         ./images/projects/banking-app-interface-concept-mobile@2x.webp 2x
                       "
-                      media="(max-width: 428px)"
+                      media="(max-width: 767px)"
                       type="image/webp"
                     />
                     <source
@@ -124,7 +227,7 @@
                         ./images/projects/banking-app-interface-concept-mobile.jpg    1x,
                         ./images/projects/banking-app-interface-concept-mobile@2x.jpg 2x
                       "
-                      media="(max-width: 428px)"
+                      media="(max-width: 767px)"
                     />
                     <img
                       src="./images/projects/banking-app-interface-concept.jpg"
@@ -724,67 +827,69 @@
 
     <footer class="footer">
       <div class="container footer-container">
-        <div class="footer-description-container">
-          <a class="logo link footer-logo-link" href="./index.html"
-            >WEB<span class="logo-web-footer">Studio</span></a
-          >
-          <p class="footer-description">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
-        <div class="footer-social-network-conteiner">
-          <p class="social-media-title">Social media</p>
-          <ul class="social-network-list-footer list">
-            <li class="social-network-item">
-              <a href="" class="footer-social-network-link">
-                <svg
-                  class="footer-social-network-icon"
-                  aria-label="іконка інстаграму"
-                  width="24"
-                  height="24"
-                >
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-network-item">
-              <a href="" class="footer-social-network-link">
-                <svg
-                  class="footer-social-network-icon"
-                  aria-label="іконка твітера"
-                  width="24"
-                  height="24"
-                >
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-network-item">
-              <a href="" class="footer-social-network-link">
-                <svg
-                  class="footer-social-network-icon"
-                  aria-label="іконка фейсбук"
-                  width="24"
-                  height="24"
-                >
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-network-item">
-              <a href="" class="footer-social-network-link">
-                <svg
-                  class="footer-social-network-icon"
-                  aria-label="іконка лінкедина"
-                  width="24"
-                  height="24"
-                >
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="footer-description-media">
+          <div class="footer-description-container">
+            <a class="logo link footer-logo-link" href="./index.html"
+              >WEB<span class="logo-web-footer">Studio</span></a
+            >
+            <p class="footer-description">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="footer-social-network-conteiner">
+            <p class="social-media-title">Social media</p>
+            <ul class="social-network-list-footer list">
+              <li class="social-network-item">
+                <a href="" class="footer-social-network-link">
+                  <svg
+                    class="footer-social-network-icon"
+                    aria-label="іконка інстаграму"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-network-item">
+                <a href="" class="footer-social-network-link">
+                  <svg
+                    class="footer-social-network-icon"
+                    aria-label="іконка твітера"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-network-item">
+                <a href="" class="footer-social-network-link">
+                  <svg
+                    class="footer-social-network-icon"
+                    aria-label="іконка фейсбук"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-network-item">
+                <a href="" class="footer-social-network-link">
+                  <svg
+                    class="footer-social-network-icon"
+                    aria-label="іконка лінкедина"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer-subscribe-box">
           <p class="subscribe-title">Subscribe</p>
@@ -814,5 +919,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -95,12 +95,12 @@ button {
     display: none;
   }
   .page-header-container {
-    width: 100%;
-    padding-top: 24px;
-    padding-bottom: 22px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 428px;
+    padding-top: 24px;
+    padding-bottom: 22px;
   }
 }
 .mobile-menu {
@@ -216,6 +216,10 @@ button {
 }
 .mobile-menu-open-btn-icon {
   stroke: var(--navy-blue-dark);
+}
+.page-header {
+  border: solid 1px var(--cornflower-accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* =============================== TABLET ==============================*/
@@ -417,17 +421,18 @@ button {
       url(../images/hero/people-office-mobile@2x.webp);
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .container-hero {
     padding: 0;
   }
   .hero-section {
+    max-width: 428px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-color: var(--navy-blue-dark);
     text-align: center;
-    padding: 112px 54px;
+    padding: 112px 0px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -440,7 +445,7 @@ button {
   text-transform: capitalize;
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--white-background);
@@ -510,6 +515,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .hero-section {
+    width: 768px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -575,6 +581,7 @@ button {
 }
 @media screen and (min-width: 1158px) {
   .hero-section {
+    min-width: 1158px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1077,9 +1084,8 @@ button {
 /* =============================== TABLET ==============================*/
 @media screen and (min-width: 768px) {
   .footer-container {
-    min-width: 768px;
+    max-width: fit-content;
     gap: 72px;
-    padding-left: 108px;
   }
   .footer-description-media {
     flex-direction: row;
@@ -1363,11 +1369,10 @@ button {
 /* =============================== PORTFOLIO ==============================*/
 
 /* =============================== MOBILE ==============================*/
-.page-header-container {
+/* .page-header-container {
   width: 100%;
-  border: solid 1px var(--cornflower-accent);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+  
+} */
 @media screen and (max-width: 767px) {
   .project-item {
     max-width: 100%;

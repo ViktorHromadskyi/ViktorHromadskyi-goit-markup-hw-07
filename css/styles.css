@@ -581,7 +581,7 @@ button {
 }
 @media screen and (min-width: 1158px) {
   .hero-section {
-    min-width: 1158px;
+    min-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
